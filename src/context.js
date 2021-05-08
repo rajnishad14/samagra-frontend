@@ -15,9 +15,11 @@ const AppContextProvider = ({ children }) => {
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpPhoto(currentStartTime)
     dataPhoto.forEach(async (item) => {
-      await axios.post('http://localhost:3002/photo', item).then((res) => {
-        console.log(res)
-      })
+      await axios
+        .post('https://samagra-backend.herokuapp.com/photo', item)
+        .then((res) => {
+          console.log(res)
+        })
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
@@ -51,9 +53,11 @@ const AppContextProvider = ({ children }) => {
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpComment(currentStartTime)
     dataComment.forEach(async (item) => {
-      await axios.post('http://localhost:3002/comment', item).then((res) => {
-        console.log(res)
-      })
+      await axios
+        .post('https://samagra-backend.herokuapp.com/comment', item)
+        .then((res) => {
+          console.log(res)
+        })
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
@@ -86,9 +90,11 @@ const AppContextProvider = ({ children }) => {
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpTodo(currentStartTime)
     dataTodo.forEach(async (item) => {
-      await axios.post('http://localhost:3002/todo', item).then((res) => {
-        console.log(res)
-      })
+      await axios
+        .post('https://samagra-backend.herokuapp.com/todo', item)
+        .then((res) => {
+          console.log(res)
+        })
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
@@ -121,9 +127,11 @@ const AppContextProvider = ({ children }) => {
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpPost(currentStartTime)
     dataPost.forEach(async (item) => {
-      await axios.post('http://localhost:3002/post', item).then((res) => {
-        console.log(res)
-      })
+      await axios
+        .post('https://samagra-backend.herokuapp.com/post', item)
+        .then((res) => {
+          console.log(res)
+        })
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
