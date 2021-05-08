@@ -49,6 +49,8 @@ const AppContextProvider = ({ children }) => {
   const [dataComment, setDataComment] = useState([])
 
   const uploadDataComment = async () => {
+    setStartUpComment('')
+    setEndUpComment('')
     let startTime = new Date()
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpComment(currentStartTime)
@@ -65,6 +67,8 @@ const AppContextProvider = ({ children }) => {
   }
 
   const fetchDataComment = async () => {
+    setStartDownComment('')
+    setEndDownComment('')
     let startTime = new Date()
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartDownComment(currentStartTime)
@@ -86,6 +90,8 @@ const AppContextProvider = ({ children }) => {
   const [dataTodo, setDataTodo] = useState([])
 
   const uploadDataTodo = async () => {
+    setStartUpTodo('')
+    setEndUpTodo('')
     let startTime = new Date()
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpTodo(currentStartTime)
@@ -102,6 +108,8 @@ const AppContextProvider = ({ children }) => {
   }
 
   const fetchDataTodo = async () => {
+    setStartDownTodo('')
+    setEndDownTodo('')
     let startTime = new Date()
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartDownTodo(currentStartTime)
@@ -123,6 +131,8 @@ const AppContextProvider = ({ children }) => {
   const [dataPost, setDataPost] = useState([])
 
   const uploadDataPost = async () => {
+    setStartUpPost('')
+    setEndUpPost('')
     let startTime = new Date()
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartUpPost(currentStartTime)
@@ -139,6 +149,8 @@ const AppContextProvider = ({ children }) => {
   }
 
   const fetchDataPost = async () => {
+    setStartDownPost('')
+    setEndDownPost('')
     let startTime = new Date()
     let currentStartTime = `${startTime.getHours()}:${startTime.getMinutes()}:${startTime.getSeconds()}`
     setStartDownPost(currentStartTime)
