@@ -32,7 +32,6 @@ const AppContextProvider = ({ children }) => {
       .get('https://jsonplaceholder.typicode.com/photos')
       .then((res) => {
         setDataPhoto([...res.data])
-        console.log(res.data)
         let endTime = new Date()
         let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
         setEndDownPhoto(currentEndTime)
