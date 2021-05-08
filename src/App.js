@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { Comments, Todo, Post, Photos, Buttons } from './components/index'
+import { AppContextProvider } from './context'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <AppContextProvider>
+      <div className="app">
+        <p className="head">Test App</p>
+        <Comments />
+        <Todo />
+        <Photos />
+        <Post />
+        <Buttons />
+      </div>
+    </AppContextProvider>
+  )
 }
 
-export default App;
+export default App
