@@ -17,9 +17,7 @@ const AppContextProvider = ({ children }) => {
     dataPhoto.forEach(async (item) => {
       await axios
         .post('https://samagra-backend.herokuapp.com/photo', item)
-        .then((res) => {
-          console.log(res)
-        })
+        .then((res) => {})
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
@@ -57,9 +55,7 @@ const AppContextProvider = ({ children }) => {
     dataComment.forEach(async (item) => {
       await axios
         .post('https://samagra-backend.herokuapp.com/comment', item)
-        .then((res) => {
-          console.log(res)
-        })
+        .then((res) => {})
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
@@ -98,9 +94,7 @@ const AppContextProvider = ({ children }) => {
     dataTodo.forEach(async (item) => {
       await axios
         .post('https://samagra-backend.herokuapp.com/todo', item)
-        .then((res) => {
-          console.log(res)
-        })
+        .then((res) => {})
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
@@ -139,9 +133,7 @@ const AppContextProvider = ({ children }) => {
     dataPost.forEach(async (item) => {
       await axios
         .post('https://samagra-backend.herokuapp.com/post', item)
-        .then((res) => {
-          console.log(res)
-        })
+        .then((res) => {})
     })
     let endTime = new Date()
     let currentEndTime = `${endTime.getHours()}:${endTime.getMinutes()}:${endTime.getSeconds()}`
