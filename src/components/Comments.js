@@ -12,16 +12,16 @@ const Comments = () => {
     dataComment,
   } = useContext(AppContext)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     fetchDataComment()
-  //   }, 5000)
-  // }, [])
-  // useEffect(() => {
-  //   if (dataComment.length !== 0) {
-  //     uploadDataComment()
-  //   }
-  // }, [dataComment])
+  useEffect(() => {
+    setTimeout(() => {
+      fetchDataComment()
+    }, 5000)
+  }, [])
+  useEffect(() => {
+    if (dataComment.length !== 0) {
+      uploadDataComment()
+    }
+  }, [dataComment])
   return (
     <div className="display">
       <p>Start: {startDownComment}</p>

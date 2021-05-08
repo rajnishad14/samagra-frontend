@@ -12,16 +12,16 @@ const Todo = () => {
     dataTodo,
   } = useContext(AppContext)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     fetchDataTodo()
-  //   }, 5000)
-  // }, [])
-  // useEffect(() => {
-  //   if (dataTodo.length !== 0) {
-  //     uploadDataTodo()
-  //   }
-  // }, [dataTodo])
+  useEffect(() => {
+    setTimeout(() => {
+      fetchDataTodo()
+    }, 5000)
+  }, [])
+  useEffect(() => {
+    if (dataTodo.length !== 0) {
+      uploadDataTodo()
+    }
+  }, [dataTodo])
   return (
     <div className="display">
       <p>Start: {startDownTodo}</p>
