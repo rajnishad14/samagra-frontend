@@ -12,16 +12,16 @@ const Post = () => {
     dataPost,
   } = useContext(AppContext)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     fetchDataPost()
-  //   }, 5000)
-  // }, [])
-  // useEffect(() => {
-  //   if (dataPost.length !== 0) {
-  //     uploadDataPost()
-  //   }
-  // }, [dataPost])
+  useEffect(() => {
+    setTimeout(() => {
+      fetchDataPost()
+    }, 5000)
+  }, [])
+  useEffect(() => {
+    if (dataPost.length !== 0) {
+      uploadDataPost()
+    }
+  }, [dataPost])
   return (
     <div className="display">
       <p>Start: {startDownPost}</p>

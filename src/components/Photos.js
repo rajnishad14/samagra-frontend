@@ -12,16 +12,16 @@ const Photos = () => {
     dataPhoto,
   } = useContext(AppContext)
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     fetchDataPhoto()
-  //   }, 5000)
-  // }, [])
-  // useEffect(() => {
-  //   if (dataPhoto.length !== 0) {
-  //     uploadDataPhoto()
-  //   }
-  // }, [dataPhoto])
+  useEffect(() => {
+    setTimeout(() => {
+      fetchDataPhoto()
+    }, 5000)
+  }, [])
+  useEffect(() => {
+    if (dataPhoto.length !== 0) {
+      uploadDataPhoto()
+    }
+  }, [dataPhoto])
   return (
     <div className="display">
       <p>Start: {startDownPhoto}</p>
